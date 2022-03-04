@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <style>
-       * {
-        color:rgb(0, 0, 0);
-        background-color: rgb(223, 137, 223);
+    <title>Curso-de-JavaScript</title>
+    <style type="text/css">
+        #tablas {
+            display: none;
+        }
+
+        .tarea {
+            border: red;
+            width: 100px;
+            margin: 20px;
+        }
+
+        #btn-reload {
+            cursor: pointer;
         }
     </style>
-    <h1>Bienvenidos</h1>
+
+
+</head>
+
+<body>
+    <style>
+        * {
+            color: rgb(0, 0, 0);
+            background-color: rgb(72, 199, 83);
+        }
+    </style>
+    <h1>Bienvenidos a mi Curso-de-JavaScript</h1>
+    <ul>
+        <li type="disc"><a href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin" target="_blank">Linkedin</a>
+        </li> <br>
+        <li type="disc"><a href="https://github.com/CesarCruzCuadra/Curso-de-JavaScript">Github</a> </li>
+    </ul>
+
+    <br> <button id="Materias" onclick="initTable()">Refrescar</button>
+    <button id="Asignaturas" onclick="init()">Informacion </button>
+
+    <br>
+    <select id="cb-users"></select>
+    <table id="tbl-posts">
+        <tr>
+            <th> </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="/arrays.js"></script>
     <script src="manchester.js"></script>
+    <script src="/compu.js"></script>
 </body>
+
 </html>
