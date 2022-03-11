@@ -1,33 +1,33 @@
 
-dineroCesar = prompt("Cuanto dinero tienes Cesar?");
-dineroMario = prompt("Cuanto dinero tienes Mario?");
-dineroPedro = prompt("Cuanto dinero tienes Pedro?");
+let dineroCesar = prompt("Cuanto dinero tienes Cesar?");
+//let dineroMario = prompt("Cuanto dinero tienes Mario?");
+//let dineroPedro = prompt("Cuanto dinero tienes Pedro?");
 
 dineroCesar  =parseFloat(dineroCesar);
  
-if (dineroCesar >= 0.6 && dineroCesar < 1){
+if (dineroCesar >= 1 && dineroCesar < 3){
     alert("Cesar: Comprate el helado de mani");
-    alert("Cesar: Su vuelto es " + (dineroCesar - 0.6));
+    alert("Cesar: Su vuelto es " + (dineroCesar - 3));
 }
-else if(dineroCesar >= 1 && dineroCesar < 1.6){
+else if(dineroCesar >= 3 && dineroCesar < 6){
     alert("Cesar: Comprate el helado de vainia ");
-    alert("Cesar: Su vuelto es " + (dineroCesar - 1));
+    alert("Cesar: Su vuelto es " + (dineroCesar - 6));
 }
-else if(dineroCesar >= 1.6 && dineroCesar < 1.7){
+else if(dineroCesar >= 6 && dineroCesar < 8){
     alert("Cesar: Comprate el helado de chocolate ");
-    alert("Cesar: Su vuelto es " + (dineroCesar - 1.6));
+    alert("Cesar: Su vuelto es " + (dineroCesar - 8));
 }
-else if(dineroCesar >= 1.7 && dineroCesar < 1.8){
+else if(dineroCesar >= 8 && dineroCesar < 10){
     alert("Cesar: Comprate el helado de menta ");
-    alert("Cesar: Su vuelto es " + (dineroCesar - 1.7));
+    alert("Cesar: Su vuelto es " + (dineroCesar - 10));
 }
-else if(dineroCesar >= 1.8 && dineroCesar < 2.9){
+else if(dineroCesar >= 10 && dineroCesar < 12){
     alert("Cesar: Comprate el helado de napolitano ");
-    alert("Cesar: Su vuelto es " + (dineroCesar - 1.8));
+    alert("Cesar: Su vuelto es " + (dineroCesar - 12));
 }
-else if (dineroCesar >= 2.9){
+else if (dineroCesar >= 12){
 alert("Cesar: Comprate un chocochoco ");
-alert("Cesar: Su vuelto es: " + (dineroCesar - 2.9));
+alert("Cesar: Su vuelto es: " + (dineroCesar - 12));
 
 } else{
    alert("Lo sentimos no cuentas con suficiente dinero Cesar ");

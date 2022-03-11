@@ -1,28 +1,28 @@
 const API_URL_BASE = "https://jsonplaceholder.typicode.com/"
 
-let crearTabla = function (posts) {
-    let stringTabla = "<tr><th>UserId</th><th>Id</th><th>Title</th><th>Body</th></tr>";
-    for (let post of posts) {
-        let fila = "<tr> <td>"
-        fila += post.userId;
-        fila += "</td>"
+let crearTabla = function(posts) {
+   let stringTabla = "<tr><th>UserId</th><th>Id</th><th>Title</th><th>Body</th></tr>";
+   for (let post of posts) {
+       let fila = "<tr> <td>"
+       fila += post.userId;
+       fila += "</td>"
 
-        fila += "<td>"
-        fila += post.id;
-        fila += "</td>"
+       fila += "<td>"
+       fila += post.id;
+       fila += "</td>"
 
-        fila += "<td>"
-        fila += post.title;
-        fila += "</td>"
+       fila += "<td>"
+       fila += post.title;
+       fila += "</td>"
 
-        fila += "<td>"
-        fila += post.body;
-        fila += "</td>"
+       fila += "<td>"
+       fila += post.body;
+       fila += "</td>"
 
-        fila += "</tr>";
-        stringTabla += fila;
-    }
-    return stringTabla;
+       fila += "</tr>";
+       stringTabla += fila;
+   }
+   return stringTabla;
 }
 
 const initTable = () => {
@@ -48,14 +48,13 @@ function crearCombobox(users) {
     return stringOptions;
 }
 
-const initCombobox = () => {
+const initCombobox =  () =>{
     const combobox = document.getElementById("cb-users");
 
     fetch(`${API_URL_BASE}users`)
-        .then((response) => response.json())
-        .then(users => {
-            combobox.innerHTML = crearCombobox(users);
-        })
+    .then((response) => response.json())
+    .then(users => {
+        combobox.innerHTML = crearCombobox(users);
+    })
 }
-
-    initCombobox()
+initCombobox()
